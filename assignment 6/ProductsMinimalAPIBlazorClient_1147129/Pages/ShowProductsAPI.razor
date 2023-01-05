@@ -1,0 +1,109 @@
+﻿@page "/showproductsapi"
+@page "/showproductsapi/{catid}"
+@using ProductsMinimalAPI_1147129.Models
+@using ProductsMinimalAPIBlazorClient_1147129.ServiceClient
+@inject ServiceClient serviceClient
+@inject IJSRuntime js
+<h3>Show Products from API</h3>
+@inject NavigationManager uriHelper
+
+<div class="row">
+    <div class="col-md-2">
+        <select value="@initialddlcat" @onchange="CatSelected">
+            @foreach (var cat in CList)
+            {
+                <option value="@cat.CategoryId">@cat.CategoryName</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-10">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product Id</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Stock Level</th>
+                    <th>Supplier</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var prod in PListSelected)
+                {
+                    <tr>
+                        <td>@prod.ProductId</td>
+                        <td>@prod.ProductName</td>
+                        <td>@prod.Price</td>
+                        <td>@prod.StockLevel</td>
+                        @if (prod.Suppliers.ToList().Count > 0)
+                        {
+                            <td>@prod.Suppliers.ToList()[0].SupplierName</td>
+                        }
+                        else
+                        {
+                            <td>None</td>
+                        }
+                        <td>
+                            <a href="editprod/edit/@prod.ProductId">Edit</a>
+                        </td>
+                        <td>
+                            <a @onclick="@(()=>Delete(prod.ProductId,prod.CategoryId))"
+                           href="">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
+<p>@Msg</p>
+
+@code {
+    List<Category> CList = new List<Category>();
+    List<Product> PListSelected = new List<Product>();  // products for cat selected
+    string? Msg;
+    public string initialddlcat;
+    [Parameter]
+    public string catid { get; set; } = "";
+
+    async void CatSelected(ChangeEventArgs ce) // await async causes strange behavior
+    {
+        int catSelected = int.Parse(ce.Value.ToString());
+        if (catid != "")
+            catSelected = int.Parse(ce.Value.ToString());
+        PListSelected = await serviceClient.GetProductsByCategoryAsync(catSelected);
+        StateHasChanged();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (catid != null)
+        {
+            if (catid != "")
+            {
+                int catSelected = int.Parse(catid);
+                PListSelected = await
+    serviceClient.GetProductsByCategoryAsync(catSelected);
+            }
+        }
+        CList = await serviceClient.GetCategoriesAsync();
+    }
+
+    async Task Delete(int prodid, int? catid)
+    {
+        if (await js.InvokeAsync<bool>("confirm", $"Do you want to delete product {prodid} ?"))
+        {
+
+            bool res = await serviceClient.DeleteProductAsync(prodid);
+            if (res == true)
+            {
+                Msg = $"Product {prodid} deleted..";
+                uriHelper.NavigateTo($"showproductsapi/{catid}", false);
+            }
+        }
+        uriHelper.NavigateTo($"showproductsapi/{catid}", false);
+    }
+}

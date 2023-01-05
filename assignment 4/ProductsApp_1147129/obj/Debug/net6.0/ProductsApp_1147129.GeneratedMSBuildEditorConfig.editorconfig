@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProductsApp_1147129
+build_property.RootNamespace = ProductsApp_1147129
+build_property.ProjectDir = C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 4\ProductsApp_1147129\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 4\ProductsApp_1147129
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Pages/AddNewProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkTmV3UHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Pages/Components/AddEditProductComp.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xBZGRFZGl0UHJvZHVjdENvbXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Pages/Components/ShoppingCart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xTaG9wcGluZ0NhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Pages/Components/ShowProducts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xTaG93UHJvZHVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Pages/EditProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFByb2R1Y3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Pages/ViewCart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0NhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-i754td0l7w
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-qu3sn0exrf
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 4/ProductsApp_1147129/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

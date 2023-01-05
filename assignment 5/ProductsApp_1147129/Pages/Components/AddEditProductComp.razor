@@ -1,0 +1,69 @@
+﻿@using ProductsApp_1147129.Models
+
+<div class="row">
+	<div class="col-md-4">
+		<EditForm Model="Prod" OnValidSubmit="@ValidSubmit">
+			<DataAnnotationsValidator />
+			<div class="form-group">
+				<label for="Prod.ProductId" class="control-label">Product Id</label>
+				<input @bind="Prod.ProductId" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="Prod.ProductName" class="control-label">Product Name</label>
+				<input @bind="Prod.ProductName" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="Prod.Description" class="control-label">Description</label>
+				<input @bind="Prod.Description" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="Prod.Price" class="control-label">Price</label>
+				<input @bind="Prod.Price" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="Prod.StockLevel" class="control-label">Stock Level</label>
+				<input @bind="Prod.StockLevel" class="form-control" />
+			</div>
+			<div class="form-group form-check-inline">
+				<label class="form-check-label">
+					<input type="checkbox" @bind="Prod.OnSale" class="form-check-input" />
+					OnSale
+				</label>
+			</div>
+			<div class="form-group form-check-inline">
+				<label class="form-check-label">
+					<input type="checkbox" @bind="Prod.Discontinued" class="form-check-input" />
+					Discontinued
+				</label>
+			</div>
+			<div class="form-group">
+				<InputRadioGroup Name="ProdColor" @bind-Value="Prod.Pcolor">
+					<InputRadio class="form-check-input" Value="0" />Red &nbsp;&nbsp;&nbsp;
+					<InputRadio class="form-check-input" Value="1" />Green &nbsp;&nbsp;&nbsp;
+					<InputRadio class="form-check-input" Value="2" />Purple &nbsp;&nbsp;&nbsp;
+				</InputRadioGroup>
+			</div>
+			<div class="form-group">
+				<select @bind="Prod.CategoryId">
+					@foreach (var cat in CList)
+					{
+						<option value="@cat.CategoryId">@cat.CategoryName</option>
+					}
+				</select>
+			</div>
+			<div class="form-group">
+				<input type="submit" value="@ButtonText" class="btn btn-primary" />
+			</div>
+		</EditForm>
+	</div>
+</div>
+@code {
+	[Parameter]
+	public Product Prod { get; set; }
+	[Parameter]
+	public List<Category> CList { get; set; }
+	[Parameter]
+	public string ButtonText { get; set; }
+	[Parameter]
+	public EventCallback ValidSubmit { get; set; }
+}

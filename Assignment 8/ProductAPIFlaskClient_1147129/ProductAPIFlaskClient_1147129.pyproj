@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ba2b7d77-f084-4e67-a6e5-aa80f3b0f9f5</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>ServiceClient;Models;Utils</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>ProductAPIFlaskClient_1147129</Name>
+    <RootNamespace>ProductAPIFlaskClient_1147129</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.10</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Models\Category.py" />
+    <Compile Include="Models\Product.py" />
+    <Compile Include="Models\Supplier.py" />
+    <Compile Include="runserver.py" />
+    <Compile Include="ProductAPIFlaskClient_1147129\__init__.py" />
+    <Compile Include="ProductAPIFlaskClient_1147129\views.py" />
+    <Compile Include="ServiceClient\ServiceClient.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\MyJsonEncoder.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Utils\" />
+    <Folder Include="ServiceClient\" />
+    <Folder Include="ProductAPIFlaskClient_1147129\" />
+    <Folder Include="ProductAPIFlaskClient_1147129\static\" />
+    <Folder Include="ProductAPIFlaskClient_1147129\static\content\" />
+    <Folder Include="ProductAPIFlaskClient_1147129\static\fonts\" />
+    <Folder Include="ProductAPIFlaskClient_1147129\static\scripts\" />
+    <Folder Include="ProductAPIFlaskClient_1147129\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProductAPIFlaskClient_1147129\templates\addnewproduct.html" />
+    <Content Include="ProductAPIFlaskClient_1147129\templates\showproducts.html" />
+    <Content Include="ProductAPIFlaskClient_1147129\templates\updateproduct.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\content\bootstrap.css" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\content\bootstrap.min.css" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\content\site.css" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\bootstrap.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\bootstrap.min.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\jquery-1.10.2.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\jquery.validate.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\jquery.validate.min.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\respond.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\respond.min.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\static\scripts\_references.js" />
+    <Content Include="ProductAPIFlaskClient_1147129\templates\about.html" />
+    <Content Include="ProductAPIFlaskClient_1147129\templates\contact.html" />
+    <Content Include="ProductAPIFlaskClient_1147129\templates\index.html" />
+    <Content Include="ProductAPIFlaskClient_1147129\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.10" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

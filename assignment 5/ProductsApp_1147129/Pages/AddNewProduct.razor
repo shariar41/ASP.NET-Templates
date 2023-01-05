@@ -1,0 +1,38 @@
+﻿@page "/addnewprod"
+@using ProductsApp_1147129.DataLayer
+@using ProductsApp_1147129.Models
+@using ProductsApp_1147129.Pages.Components
+@inject IProductsRepository irep
+<h3>Add New Product</h3>
+<AddEditProductComp ButtonText="Add New Product" Prod="Prodct" CList="CatList"
+					ValidSubmit="@AddProduct" />
+<p>@Msg</p>
+@code {
+	List<Category> CatList;
+	Product Prodct;
+	string Msg = "";
+	protected override void OnInitialized()
+	{
+		//IProductsRepository irep = new ProductRepositorySQL();
+		CatList = irep.GetCategories();
+		Prodct = new Product();
+		Prodct.CategoryId = 100;
+	}
+	void AddProduct()
+	{
+		//IProductsRepository irep = new ProductRepositorySQL();
+		bool ret = false;
+		try
+		{
+			ret = irep.AddProduct(Prodct);
+		}
+		catch (Exception ex)
+		{
+			Msg = ex.Message;
+		}
+		if (ret)
+			Msg = "Product added successfully..";
+		else
+			Msg = "Problem in adding product..";
+	}
+}

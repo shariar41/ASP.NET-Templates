@@ -1,0 +1,70 @@
+﻿@using ProductsMinimalAPI_1147129.Models
+
+<EditForm Model="@prod" OnValidSubmit="@OnValidSubmit">
+    <DataAnnotationsValidator />
+    @if (ShowIdTextBox)
+    {
+        <div class="form-group">
+            <label>Product Id :</label>
+            <div>
+                <input @bind="prod.ProductId" />
+            </div>
+        </div>
+    }
+    <div class="form-group">
+        <label>Product Name :</label>
+        <div>
+            <input @bind="prod.ProductName" />
+        </div>
+        <ValidationMessage For="@(() => prod.ProductName)" />
+
+    </div>
+    <div class="form-group ">
+        <div>
+            <label>Price :</label>
+            <div>
+                <input @bind="prod.Price" />
+            </div>
+        </div>
+        <ValidationMessage For="@(() => prod.Price)" />
+    </div>
+    <div class="form-group ">
+        <div>
+            <label>Category :</label>
+            <div>
+                <select @bind="prod.CategoryId">
+                    @foreach (var cat in CatList)
+                    {
+                        <option value="@cat.CategoryId">@cat.CategoryName</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <div class="form-group ">
+        <div>
+            <label>Stock Level :</label>
+            <div>
+                <input @bind="prod.StockLevel" />
+            </div>
+        </div>
+        <ValidationMessage For="@(() => prod.StockLevel)" />
+    </div>
+    <button type="submit" class="btn btn-success">
+        @ButtonText
+    </button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public Product prod { get; set; }
+    [Parameter]
+    public List<Category> CatList { get; set; }
+    [Parameter]
+    public string ButtonText { get; set; } = "Update";
+    [Parameter]
+    public bool ShowIdTextBox { get; set; } = true;
+    [Parameter]
+    public EventCallback OnValidSubmit { get; set; }
+} 

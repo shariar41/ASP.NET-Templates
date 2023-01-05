@@ -1,0 +1,44 @@
+﻿@page "/editprod/edit/{prodid}" 
+@using ProductsMinimalAPIBlazorClient_1147129.ServiceClient 
+@using ProductsMinimalAPIBlazorClient_1147129.Pages.Components
+@using ProductsMinimalAPI_1147129.Models 
+@inject ServiceClient serviceClient 
+@inject NavigationManager uriHelper 
+@inject IJSRuntime js 
+ 
+<h3>Edit Product</h3> 
+<AddEditProductComp ButtonText="Update Product" prod="prodct" CatList="CList" 
+      OnValidSubmit="@UpdateProduct" ShowIdTextBox="true" /> 
+<br/> 
+<p>@Msg</p> 
+@code { 
+    [Parameter] public string prodid { get; set; } 
+    Product prodct = new Product(); 
+    List<Category> CList = new List<Category>(); 
+    string? Msg; 
+ 
+    protected override async Task OnInitializedAsync() 
+    { 
+        CList = await serviceClient.GetCategoriesAsync(); 
+    } 
+ 
+    protected async override Task OnParametersSetAsync() 
+    { 
+        prodct = await serviceClient.GetProductByIdAsync(int.Parse(prodid)); 
+    } 
+ 
+    async Task UpdateProduct() 
+    { 
+        try{ 
+            // prodct contains updated info, write to DB 
+ 
+            bool res = await serviceClient.UpdateProductAsync(prodct); 
+            if (res == true) 
+                Msg = "Product updated.."; 
+        } 
+        catch (Exception ex) 
+        { 
+            Msg = "Problem in updating product"; 
+        } 
+    } 
+} 

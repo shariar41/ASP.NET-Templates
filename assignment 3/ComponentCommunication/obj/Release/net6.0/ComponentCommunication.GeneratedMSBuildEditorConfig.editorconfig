@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ComponentCommunication
+build_property.RootNamespace = ComponentCommunication
+build_property.ProjectDir = C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/CounterLC.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlckxDLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/CounterQS.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlclFTLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/CounterQS2.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlclFTMi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/CounterRP.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlclJQLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/MyClock.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlDbG9jay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/PassDataViaQS.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFzc0RhdGFWaWFRUy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/Quiz1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpejEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/ReadLocal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVhZExvY2FsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/ReadUserInfo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVhZFVzZXJJbmZvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/SetUserInfo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0VXNlckluZm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/StoreLocal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmVMb2NhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/TestCounter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdENvdW50ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-gds09efcki
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-a0ps98n4pi
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shariar Islam Saimon/Source/Repos/shariar41/ASP.NET-Templates/assignment 3/ComponentCommunication/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

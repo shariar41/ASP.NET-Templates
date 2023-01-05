@@ -1,0 +1,63 @@
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\bin\Debug\net6.0\appsettings.json
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\bin\Debug\net6.0\ComponentCommunication.staticwebassets.runtime.json
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\bin\Debug\net6.0\ComponentCommunication.exe
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\bin\Debug\net6.0\ComponentCommunication.deps.json
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\bin\Debug\net6.0\ComponentCommunication.runtimeconfig.json
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\bin\Debug\net6.0\ComponentCommunication.dll
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\bin\Debug\net6.0\ComponentCommunication.pdb
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.csproj.AssemblyReference.cache
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.AssemblyInfoInputs.cache
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.AssemblyInfo.cs
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.csproj.CoreCompileInputs.cache
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.RazorAssemblyInfo.cache
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.RazorAssemblyInfo.cs
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\scopedcss\bundle\ComponentCommunication.styles.css
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\scopedcss\projectbundle\ComponentCommunication.bundle.scp.css
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.csproj.CopyComplete
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.dll
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\refint\ComponentCommunication.dll
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.pdb
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.genruntimeconfig.cache
+C:\Users\Shariar Islam Saimon\Desktop\Master's in University of Bridgeport\2nd Semester\CPSC-555 web development ausif mahmood\Fall 2022\assignment 3\ComponentCommunication\obj\Debug\net6.0\ref\ComponentCommunication.dll
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\bin\Debug\net6.0\appsettings.json
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\bin\Debug\net6.0\ComponentCommunication.staticwebassets.runtime.json
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\bin\Debug\net6.0\ComponentCommunication.exe
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\bin\Debug\net6.0\ComponentCommunication.deps.json
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\bin\Debug\net6.0\ComponentCommunication.runtimeconfig.json
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\bin\Debug\net6.0\ComponentCommunication.dll
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\bin\Debug\net6.0\ComponentCommunication.pdb
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.csproj.AssemblyReference.cache
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.AssemblyInfoInputs.cache
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.AssemblyInfo.cs
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.csproj.CoreCompileInputs.cache
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.RazorAssemblyInfo.cache
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.RazorAssemblyInfo.cs
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\staticwebassets\msbuild.ComponentCommunication.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\staticwebassets\msbuild.build.ComponentCommunication.props
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ComponentCommunication.props
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ComponentCommunication.props
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\scopedcss\bundle\ComponentCommunication.styles.css
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\scopedcss\projectbundle\ComponentCommunication.bundle.scp.css
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.csproj.CopyComplete
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.dll
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\refint\ComponentCommunication.dll
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.pdb
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ComponentCommunication.genruntimeconfig.cache
+C:\Users\Shariar Islam Saimon\Source\Repos\shariar41\ASP.NET-Templates\assignment 3\ComponentCommunication\obj\Debug\net6.0\ref\ComponentCommunication.dll

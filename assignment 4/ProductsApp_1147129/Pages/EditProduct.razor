@@ -1,0 +1,42 @@
+﻿@page "/editproduct/{prodid}"
+@using ProductsApp_1147129.DataLayer
+@using ProductsApp_1147129.Models
+@using ProductsApp_1147129.Pages.Components
+@inject NavigationManager UriHelper
+@inject IProductsRepository irep
+<h3>EditProduct</h3>
+<br />
+<AddEditProductComp ButtonText="Edit Product" CList="CatList" Prod="Prodct"
+					ValidSubmit="@UpdateProduct" />
+<br />
+<p>@Msg</p>
+@code {
+	[Parameter]
+	public string prodid { get; set; }
+	string Msg = "";
+	List<Category> CatList;
+	Product Prodct;
+	protected override void OnInitialized()
+	{
+		CatList = irep.GetCategories();
+		Prodct = irep.GetProductById(int.Parse(prodid));
+	}
+	void UpdateProduct()
+	{
+		bool ret = false;
+		try
+		{
+			ret = irep.UpdateProduct(Prodct);
+		}
+		catch (Exception ex)
+		{
+			Msg = ex.Message;
+		}
+		if (ret == true){
+			Msg = "Product updated successfully..";
+			UriHelper.NavigateTo($"showproducts/");
+		}
+		else
+			Msg = "Problem in updating product ";
+	}
+}

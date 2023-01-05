@@ -1,0 +1,134 @@
+﻿@page "/showproducts/{catid}"
+@page "/showproducts"
+@inject IJSRuntime js
+@inject NavigationManager navManager
+@using ProductsApp_1147129.Models
+@using ProductsApp_1147129.ModelsVM
+@using ProductsApp_1147129.DataLayer
+@inject IProductsRepository irep
+@inject ICartRepository icartRep
+<h3>Show Products</h3>
+<div class="row">
+	<div class="col-md-3">
+		<select value="@catselection" @onchange="CatSelected">
+			@*<option value="0"></option>*@
+			@foreach (var cat in CList)
+			{
+				<option value="@cat.CategoryId">@cat.CategoryName</option>
+			}
+		</select>
+	</div>
+	<div class="col-md-9">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>ProductId</th>
+					<th>ProductName</th>
+					<th>Price</th>
+					<th>Stock Level</th>
+					<th>OnSale</th>
+					<th>Delete</th>
+					<th>Apply Discount</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var prod in PList)
+				{
+					<tr>
+						<td>@prod.ProductId</td>
+						<td>@prod.ProductName</td>
+						<td>@prod.Price</td>
+						<td>@prod.StockLevel</td>
+						<td><input type="checkbox" @bind="prod.OnSale" /></td>
+						<td><a @onclick:preventDefault @onclick="@(()=>Delete(prod.ProductId,prod.CategoryId))" href="">Delete</a></td>
+						<td><button @onclick="@(()=>ApplyDiscount(@prod.ProductId))">5%</button></td>
+						<td><a href="editproduct/@prod.ProductId">Edit</a></td>
+						<td><button @onclick="@(()=>AddToCart(@prod.ProductId))">Cart</button></td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+<p>@Msg</p>
+<p>@((MarkupString)Msg2)</p>
+@code {
+	List<Category> CList = new List<Category>();
+	List<Product> PList = new List<Product>();
+	string Msg = "";
+	string Msg2 = "";
+	string catselection = "";
+	[Parameter]
+	public string catid { get; set; } = "";// route parameter
+
+	async Task AddToCart(int prodid)
+	{
+		Product prod = irep.GetProductById(prodid);
+		CartItem item = new CartItem
+			{
+				ProductId = prod.ProductId,
+				ProductName = prod.ProductName,
+				Price = (double)prod.Price,
+				Quantity = 1
+			};
+		icartRep.AddItemToCart(item);
+		int PExists = await icartRep.ExistInCart(item);
+		if (PExists>0)
+		{
+			Msg2 += "<br/>" + "product-" + item.ProductId.ToString() + " has been added " + (PExists+1).ToString() + " times to cart";
+		}
+		else{
+			Msg2 = Msg2 + "<br/>" + "product-" + item.ProductId.ToString() + " has been added to cart";
+		}
+		
+		//btnStyle2 = "border-color:green;";
+	}
+	void ApplyDiscount(int prodid)
+	{
+		//IProductsRepository irep = new ProductRepositorySQL();
+		irep.ApplyDiscount(prodid, 5);
+		PList = irep.GetProductsByCatId(int.Parse(catid));
+	}
+	protected override void OnInitialized()
+	{
+		//IProductsRepository irep = new ProductRepositorySQL();
+		Msg = "";
+		Msg2 = "";
+		CList = irep.GetCategories();
+		if (catid != null)
+		{
+			if (catid != "")
+			{
+				int catSelected = int.Parse(catid);
+				PList = irep.GetProductsByCatId(catSelected);
+			}
+		}
+	}
+	void CatSelected(ChangeEventArgs ce)
+	{
+		//IProductsRepository irep = new ProductRepositorySQL();
+		int catSelected = int.Parse(ce.Value.ToString());
+		PList = irep.GetProductsByCatId(catSelected);
+		catid = catSelected.ToString();
+	}
+	async Task Delete(int prodid, int catid)
+	{
+		// javascript confirmation
+		if (await js.InvokeAsync<bool>("confirm", $"Delete Product with ProductId={prodid}?"))
+		{
+			//IProductsRepository irep = new ProductRepositorySQL();
+			bool ret = irep.DeleteProduct(prodid);
+			if (ret == true)
+			{
+				Msg = $"Product with ProductId={prodid} deleted..";
+				catselection = catid.ToString();
+				PList = irep.GetProductsByCatId(catid);
+				//navManager.NavigateTo($"showproducts/{catid}", false);
+			}
+			else
+				Msg = "Problem in deleting product";
+		}
+	}
+}

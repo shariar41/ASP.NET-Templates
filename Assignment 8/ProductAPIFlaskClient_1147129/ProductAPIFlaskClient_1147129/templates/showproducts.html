@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block content %}
+<script>
+
+    function catSelected() {
+        document.getElementById('f1').submit();
+    }
+</script>
+
+<h2 class="text-center">Products From API</h2>
+<div class="row">
+    <div class="col-md-3 text-right">
+        <form name="f1" id="f1" method="post" action="showproducts">
+            <select name="catddl" onchange="catSelected()">
+                <option value="0"></option>
+                {%for cat in catlist:%}
+                {% if cat.category_id|int == catselected|int %}
+                <option value="{{cat.category_id}}"
+                        selected>
+                    {{cat.category_name}}
+                </option>
+                {% else %}
+                <option value="{{cat.category_id}}">
+                    {{cat.category_name}}
+                </option>
+                {% endif %}
+                {% endfor %}
+            </select>
+        </form>
+    </div>
+    <div class="col-md-9">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product Id</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Stock Level</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for prod in prods:%}
+                <tr>
+                    <td>{{prod.product_id}}</td>
+                    <td>{{prod.product_name}}</td>
+                    <td>{{prod.price}}</td>
+                    <td>{{prod.stock_level}}</td>
+
+                    <td>
+                        <a href="updateproduct/{{prod.product_id}}">Edit</a>
+                    </td>
+                    <td>
+                        <a href="deleteproduct/{{prod.product_id}}">Delete</a>
+                    </td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock content %}

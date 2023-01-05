@@ -1,0 +1,51 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>e146220f-af85-43c7-8447-ff314c63aacf</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>ProductsAPI.py</StartupFile>
+    <SearchPath>DataLayer;Models;Services;Utils</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>SimpleAPI_1147129</Name>
+    <RootNamespace>SimpleAPI_1147129</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DataLayer\DataLayer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataLayer\Repository.py" />
+    <Compile Include="Models\Category.py" />
+    <Compile Include="Models\Product.py" />
+    <Compile Include="Models\Supplier.py" />
+    <Compile Include="ProductsAPI.py" />
+    <Compile Include="Services\IProductsAPI.py" />
+    <Compile Include="Services\ProductsService_v1_0.py" />
+    <Compile Include="SimpleAPI_1147129.py" />
+    <Compile Include="Utils\MyJsonEncoder.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataLayer\" />
+    <Folder Include="Models\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

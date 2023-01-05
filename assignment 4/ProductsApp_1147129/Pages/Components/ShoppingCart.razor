@@ -1,0 +1,72 @@
+﻿@using ProductsApp_1147129.DataLayer
+@using ProductsApp_1147129.ModelsVM
+@inject ICartRepository cartRepository
+<div class="row">
+	<div class="col-md-5">
+		<h4 class="text-center">My Shopping Cart</h4>
+		<span style="font-size:smaller">To remove an item, change quantity to 0</span>
+		<table style="border:1px solid dodgerblue;margin:0" class="table">
+			<thead>
+				<tr style="background-color:dodgerblue;color:white">
+					<th>ProductName</th>
+					<th>Price</th>
+					<th>Quantity</th>
+					<th>Amount</th>
+				</tr>
+			</thead>
+			<tbody>
+				@{
+					if (MyCart != null)
+					{
+						double total = 0;
+						foreach (var item in MyCart)
+						{
+							var amount = item.Price * item.Quantity;
+							<tr>
+								<td>@item.ProductName</td>
+								<td>@String.Format("{0:c}",item.Price)</td>
+								<td><input class="form-control w-50" @onchange="(ce=>UpdateCart(item.ProductId,ce))" value="@item.Quantity" /></td>
+								<td>@String.Format("{0:c}",amount)</td>
+							</tr>
+							total = total + item.Price * item.Quantity;
+						}
+						<tr>
+							<td><button @onclick="ClearCart" class="btn-danger">Clear Cart</button></td>
+							<td colspan="2" align="right">Total</td>
+							<td><b>@String.Format("{0:c}",total)</b></td>
+						</tr>
+					}
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+@code {
+	[Parameter]
+	public List<CartItem> MyCart { get; set; }
+	void UpdateCart(int prodid, ChangeEventArgs ce) // triggered when quantity is changed
+	{
+		if (MyCart == null)
+			return;
+		var quantity = int.Parse(ce.Value.ToString());
+		CartItem itemToRemove = null;
+		foreach (var item in MyCart)
+		{
+			if ((quantity <= 0) && (item.ProductId == prodid))
+			{
+				itemToRemove = item;
+				break;
+			}
+			if ((quantity > 0) && (item.ProductId == prodid))
+				item.Quantity = quantity;
+		}
+		if (itemToRemove != null)
+			MyCart.Remove(itemToRemove);
+		cartRepository.StoreCart(MyCart);
+	}
+	void ClearCart()
+	{
+		MyCart.Clear();
+		cartRepository.StoreCart(MyCart);
+	}
+}

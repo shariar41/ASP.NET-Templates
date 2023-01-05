@@ -1,0 +1,23 @@
+﻿@page "/counterqs2"
+@using ComponentCommunication.Utils
+@using Microsoft.AspNetCore.WebUtilities
+@using Microsoft.Extensions.Primitives
+@inject NavigationManager navManager // for query string or url routing
+<h3>Counter Query String</h3>
+<br />
+<button class="btn btn-primary" @onclick="IncrementCount">Increment Count</button>
+<p>Current Count = @currentCount</p>
+@code {
+	decimal currentCount = 0;
+	decimal incby; // query string parameter
+	decimal initialcount; // query string parameter
+	protected override void OnInitialized()
+	{
+		navManager.TryGetQueryString<decimal>("initialcount", out currentCount);
+		navManager.TryGetQueryString<decimal>("incby", out incby);
+	}
+	void IncrementCount()
+	{
+		currentCount = currentCount + incby;
+	}
+}

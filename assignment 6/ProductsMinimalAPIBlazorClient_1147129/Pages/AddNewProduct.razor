@@ -1,0 +1,39 @@
+﻿@page "/addnewprod" 
+@using ProductsMinimalAPI_1147129.Models 
+@using ProductsMinimalAPIBlazorClient_1147129.Pages.Components
+@using ProductsMinimalAPIBlazorClient_1147129.ServiceClient 
+@inject ServiceClient serviceClient 
+@inject NavigationManager uriHelper 
+@inject IJSRuntime js 
+ 
+<h3>Add Product</h3> 
+<AddEditProductComp ButtonText="Add New Product" prod="prodct" CatList="CList" 
+      OnValidSubmit="@AddProduct" ShowIdTextBox="true" /> 
+<br/> 
+<p>@Msg</p> 
+@code { 
+    [Parameter] public string prodid { get; set; } 
+    Product prodct = new Product(){CategoryId=100}; 
+    List<Category> CList = new List<Category>(); 
+    string? Msg; 
+ 
+    protected override async Task OnInitializedAsync() 
+    { 
+        CList = await serviceClient.GetCategoriesAsync(); 
+    } 
+ 
+    async Task AddProduct() 
+    { 
+        try 
+        { 
+            // prodct contains updated info, write to DB 
+            bool res = await serviceClient.AddNewProductAsync(prodct); 
+            if (res == true) 
+                Msg = "Product added.."; 
+        } 
+        catch (Exception ex) 
+        { 
+            Msg = "Problem in adding product"; 
+        } 
+    } 
+} 

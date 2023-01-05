@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Add New Product</h3>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="product_id" class="control-label">Product Id :</label>
+                    <div>
+                        <input name="product_id" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="product_name" class="control-label">Product Name :</label>
+                    <div>
+                        <input name="product_name" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description" class="control-label">Product description :</label>
+                    <div>
+                        <input name="description" />
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <div>
+                        <label for="price" class="control-label">Price :</label>
+                        <div>
+                            <input name="price" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <div>
+                        <label>Category :</label>
+                        <div>
+                            <select name="category_id">
+                                <option value="0"></option>
+                                {%for cat in catlist:%}
+                                <option value="{{cat.category_id}}">
+                                    {{cat.category_name}}
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <div>
+                        <label for="stock_level" class="control-label">Stock Level :</label>
+                        <div>
+                            <input name="stock_level" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-check-inline">
+                    <label for="onsale" class="form-check-label">
+                        <input type="checkbox" name="onsale" class="form-check-input" />
+                        OnSale
+                    </label>
+                </div>
+                <div class="form-group form-check-inline">
+                    <label for="Discontinued" class="form-check-label">
+                        <input type="checkbox" name="Discontinued" class="form-check-input" />
+                        Discontinued
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-success">
+                    Add New Product
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<p>
+    {{msg}}
+    {% endblock %}
+</p>
